@@ -1,0 +1,55 @@
+{"N": 1048576, "K": 1024, "D": 256, "B": 1, "dtype": "fp16", "BLOCK_N": 32, "BLOCK_K": 32, "num_warps": 4, "num_stages": 1, "time_ms": 4.590208053588867, "status": "ok"}
+{"N": 1048576, "K": 1024, "D": 256, "B": 1, "dtype": "fp16", "BLOCK_N": 32, "BLOCK_K": 32, "num_warps": 4, "num_stages": 2, "time_ms": 3.4933760166168213, "status": "ok"}
+{"N": 1048576, "K": 1024, "D": 256, "B": 1, "dtype": "fp16", "BLOCK_N": 32, "BLOCK_K": 32, "num_warps": 4, "num_stages": 4, "time_ms": 3.9715840816497803, "status": "ok"}
+{"N": 1048576, "K": 1024, "D": 256, "B": 1, "dtype": "fp16", "BLOCK_N": 32, "BLOCK_K": 32, "num_warps": 8, "num_stages": 1, "time_ms": 6.242784023284912, "status": "ok"}
+{"N": 1048576, "K": 1024, "D": 256, "B": 1, "dtype": "fp16", "BLOCK_N": 32, "BLOCK_K": 32, "num_warps": 8, "num_stages": 2, "time_ms": 5.336544036865234, "status": "ok"}
+{"N": 1048576, "K": 1024, "D": 256, "B": 1, "dtype": "fp16", "BLOCK_N": 32, "BLOCK_K": 32, "num_warps": 8, "num_stages": 4, "time_ms": 5.437119960784912, "status": "ok"}
+{"N": 1048576, "K": 1024, "D": 256, "B": 1, "dtype": "fp16", "BLOCK_N": 32, "BLOCK_K": 64, "num_warps": 4, "num_stages": 1, "time_ms": 3.885823965072632, "status": "ok"}
+{"N": 1048576, "K": 1024, "D": 256, "B": 1, "dtype": "fp16", "BLOCK_N": 32, "BLOCK_K": 64, "num_warps": 4, "num_stages": 2, "time_ms": 2.951616048812866, "status": "ok"}
+{"N": 1048576, "K": 1024, "D": 256, "B": 1, "dtype": "fp16", "BLOCK_N": 32, "BLOCK_K": 64, "num_warps": 4, "num_stages": 4, "time_ms": 3.6590399742126465, "status": "ok"}
+{"N": 1048576, "K": 1024, "D": 256, "B": 1, "dtype": "fp16", "BLOCK_N": 32, "BLOCK_K": 64, "num_warps": 8, "num_stages": 1, "time_ms": 4.646719932556152, "status": "ok"}
+{"N": 1048576, "K": 1024, "D": 256, "B": 1, "dtype": "fp16", "BLOCK_N": 32, "BLOCK_K": 64, "num_warps": 8, "num_stages": 2, "time_ms": 3.58188796043396, "status": "ok"}
+{"N": 1048576, "K": 1024, "D": 256, "B": 1, "dtype": "fp16", "BLOCK_N": 32, "BLOCK_K": 64, "num_warps": 8, "num_stages": 4, "time_ms": 3.81660795211792, "status": "ok"}
+{"N": 1048576, "K": 1024, "D": 256, "B": 1, "dtype": "fp16", "BLOCK_N": 32, "BLOCK_K": 128, "num_warps": 4, "num_stages": 1, "time_ms": 3.489856004714966, "status": "ok"}
+{"N": 1048576, "K": 1024, "D": 256, "B": 1, "dtype": "fp16", "BLOCK_N": 32, "BLOCK_K": 128, "num_warps": 4, "num_stages": 2, "time_ms": 2.7765440940856934, "status": "ok"}
+{"N": 1048576, "K": 1024, "D": 256, "B": 1, "dtype": "fp16", "BLOCK_N": 32, "BLOCK_K": 128, "num_warps": 4, "num_stages": 4, "time_ms": 3.953727960586548, "status": "ok"}
+{"N": 1048576, "K": 1024, "D": 256, "B": 1, "dtype": "fp16", "BLOCK_N": 32, "BLOCK_K": 128, "num_warps": 8, "num_stages": 1, "time_ms": 4.3051838874816895, "status": "ok"}
+{"N": 1048576, "K": 1024, "D": 256, "B": 1, "dtype": "fp16", "BLOCK_N": 32, "BLOCK_K": 128, "num_warps": 8, "num_stages": 2, "time_ms": 3.3388800621032715, "status": "ok"}
+{"N": 1048576, "K": 1024, "D": 256, "B": 1, "dtype": "fp16", "BLOCK_N": 32, "BLOCK_K": 128, "num_warps": 8, "num_stages": 4, "time_ms": 4.396480083465576, "status": "ok"}
+{"N": 1048576, "K": 1024, "D": 256, "B": 1, "dtype": "fp16", "BLOCK_N": 64, "BLOCK_K": 32, "num_warps": 4, "num_stages": 1, "time_ms": 1.8958240151405334, "status": "ok"}
+{"N": 1048576, "K": 1024, "D": 256, "B": 1, "dtype": "fp16", "BLOCK_N": 64, "BLOCK_K": 32, "num_warps": 4, "num_stages": 2, "time_ms": 1.686847984790802, "status": "ok"}
+{"N": 1048576, "K": 1024, "D": 256, "B": 1, "dtype": "fp16", "BLOCK_N": 64, "BLOCK_K": 32, "num_warps": 4, "num_stages": 4, "time_ms": 1.7014720439910889, "status": "ok"}
+{"N": 1048576, "K": 1024, "D": 256, "B": 1, "dtype": "fp16", "BLOCK_N": 64, "BLOCK_K": 32, "num_warps": 8, "num_stages": 1, "time_ms": 3.092223882675171, "status": "ok"}
+{"N": 1048576, "K": 1024, "D": 256, "B": 1, "dtype": "fp16", "BLOCK_N": 64, "BLOCK_K": 32, "num_warps": 8, "num_stages": 2, "time_ms": 2.6670401096343994, "status": "ok"}
+{"N": 1048576, "K": 1024, "D": 256, "B": 1, "dtype": "fp16", "BLOCK_N": 64, "BLOCK_K": 32, "num_warps": 8, "num_stages": 4, "time_ms": 2.763711929321289, "status": "ok"}
+{"N": 1048576, "K": 1024, "D": 256, "B": 1, "dtype": "fp16", "BLOCK_N": 64, "BLOCK_K": 64, "num_warps": 4, "num_stages": 1, "time_ms": 1.629311978816986, "status": "ok"}
+{"N": 1048576, "K": 1024, "D": 256, "B": 1, "dtype": "fp16", "BLOCK_N": 64, "BLOCK_K": 64, "num_warps": 4, "num_stages": 2, "time_ms": 1.4541120131810505, "status": "ok"}
+{"N": 1048576, "K": 1024, "D": 256, "B": 1, "dtype": "fp16", "BLOCK_N": 64, "BLOCK_K": 64, "num_warps": 4, "num_stages": 4, "time_ms": 2.0032799243927, "status": "ok"}
+{"N": 1048576, "K": 1024, "D": 256, "B": 1, "dtype": "fp16", "BLOCK_N": 64, "BLOCK_K": 64, "num_warps": 8, "num_stages": 1, "time_ms": 2.33406400680542, "status": "ok"}
+{"N": 1048576, "K": 1024, "D": 256, "B": 1, "dtype": "fp16", "BLOCK_N": 64, "BLOCK_K": 64, "num_warps": 8, "num_stages": 2, "time_ms": 2.0589120388031006, "status": "ok"}
+{"N": 1048576, "K": 1024, "D": 256, "B": 1, "dtype": "fp16", "BLOCK_N": 64, "BLOCK_K": 64, "num_warps": 8, "num_stages": 4, "time_ms": 2.478048086166382, "status": "ok"}
+{"N": 1048576, "K": 1024, "D": 256, "B": 1, "dtype": "fp16", "BLOCK_N": 64, "BLOCK_K": 128, "num_warps": 4, "num_stages": 1, "time_ms": 1.5091520150502522, "status": "ok"}
+{"N": 1048576, "K": 1024, "D": 256, "B": 1, "dtype": "fp16", "BLOCK_N": 64, "BLOCK_K": 128, "num_warps": 4, "num_stages": 2, "time_ms": 1.9380800127983093, "status": "ok"}
+{"N": 1048576, "K": 1024, "D": 256, "B": 1, "dtype": "fp16", "BLOCK_N": 64, "BLOCK_K": 128, "num_warps": 4, "num_stages": 4, "status": "oor"}
+{"N": 1048576, "K": 1024, "D": 256, "B": 1, "dtype": "fp16", "BLOCK_N": 64, "BLOCK_K": 128, "num_warps": 8, "num_stages": 1, "time_ms": 2.0143359899520874, "status": "ok"}
+{"N": 1048576, "K": 1024, "D": 256, "B": 1, "dtype": "fp16", "BLOCK_N": 64, "BLOCK_K": 128, "num_warps": 8, "num_stages": 2, "time_ms": 2.1291199922561646, "status": "ok"}
+{"N": 1048576, "K": 1024, "D": 256, "B": 1, "dtype": "fp16", "BLOCK_N": 64, "BLOCK_K": 128, "num_warps": 8, "num_stages": 4, "status": "oor"}
+{"N": 1048576, "K": 1024, "D": 256, "B": 1, "dtype": "fp16", "BLOCK_N": 128, "BLOCK_K": 32, "num_warps": 4, "num_stages": 1, "time_ms": 1.7898079752922058, "status": "ok"}
+{"N": 1048576, "K": 1024, "D": 256, "B": 1, "dtype": "fp16", "BLOCK_N": 128, "BLOCK_K": 32, "num_warps": 4, "num_stages": 2, "time_ms": 1.5738026698430378, "status": "ok"}
+{"N": 1048576, "K": 1024, "D": 256, "B": 1, "dtype": "fp16", "BLOCK_N": 128, "BLOCK_K": 32, "num_warps": 4, "num_stages": 4, "time_ms": 1.92220801115036, "status": "ok"}
+{"N": 1048576, "K": 1024, "D": 256, "B": 1, "dtype": "fp16", "BLOCK_N": 128, "BLOCK_K": 32, "num_warps": 8, "num_stages": 1, "time_ms": 1.7119840383529663, "status": "ok"}
+{"N": 1048576, "K": 1024, "D": 256, "B": 1, "dtype": "fp16", "BLOCK_N": 128, "BLOCK_K": 32, "num_warps": 8, "num_stages": 2, "time_ms": 1.538698673248291, "status": "ok"}
+{"N": 1048576, "K": 1024, "D": 256, "B": 1, "dtype": "fp16", "BLOCK_N": 128, "BLOCK_K": 32, "num_warps": 8, "num_stages": 4, "time_ms": 1.740127980709076, "status": "ok"}
+{"N": 1048576, "K": 1024, "D": 256, "B": 1, "dtype": "fp16", "BLOCK_N": 128, "BLOCK_K": 64, "num_warps": 4, "num_stages": 1, "time_ms": 1.3248639901479085, "status": "ok"}
+{"N": 1048576, "K": 1024, "D": 256, "B": 1, "dtype": "fp16", "BLOCK_N": 128, "BLOCK_K": 64, "num_warps": 4, "num_stages": 2, "time_ms": 1.7297279834747314, "status": "ok"}
+{"N": 1048576, "K": 1024, "D": 256, "B": 1, "dtype": "fp16", "BLOCK_N": 128, "BLOCK_K": 64, "num_warps": 4, "num_stages": 4, "time_ms": 1.5374186833699544, "status": "ok"}
+{"N": 1048576, "K": 1024, "D": 256, "B": 1, "dtype": "fp16", "BLOCK_N": 128, "BLOCK_K": 64, "num_warps": 8, "num_stages": 1, "time_ms": 1.3514666557312012, "status": "ok"}
+{"N": 1048576, "K": 1024, "D": 256, "B": 1, "dtype": "fp16", "BLOCK_N": 128, "BLOCK_K": 64, "num_warps": 8, "num_stages": 2, "time_ms": 1.6592000126838684, "status": "ok"}
+{"N": 1048576, "K": 1024, "D": 256, "B": 1, "dtype": "fp16", "BLOCK_N": 128, "BLOCK_K": 64, "num_warps": 8, "num_stages": 4, "time_ms": 1.432373325030009, "status": "ok"}
+{"N": 1048576, "K": 1024, "D": 256, "B": 1, "dtype": "fp16", "BLOCK_N": 128, "BLOCK_K": 128, "num_warps": 4, "num_stages": 1, "time_ms": 1.712224006652832, "status": "ok"}
+{"N": 1048576, "K": 1024, "D": 256, "B": 1, "dtype": "fp16", "BLOCK_N": 128, "BLOCK_K": 128, "num_warps": 4, "num_stages": 2, "time_ms": 1.5807146628697712, "status": "ok"}
+{"N": 1048576, "K": 1024, "D": 256, "B": 1, "dtype": "fp16", "BLOCK_N": 128, "BLOCK_K": 128, "num_warps": 4, "num_stages": 4, "status": "oor"}
+{"N": 1048576, "K": 1024, "D": 256, "B": 1, "dtype": "fp16", "BLOCK_N": 128, "BLOCK_K": 128, "num_warps": 8, "num_stages": 1, "time_ms": 1.7008000016212463, "status": "ok"}
+{"N": 1048576, "K": 1024, "D": 256, "B": 1, "dtype": "fp16", "BLOCK_N": 128, "BLOCK_K": 128, "num_warps": 8, "num_stages": 2, "time_ms": 1.4604693253835042, "status": "ok"}
+{"N": 1048576, "K": 1024, "D": 256, "B": 1, "dtype": "fp16", "BLOCK_N": 128, "BLOCK_K": 128, "num_warps": 8, "num_stages": 4, "status": "oor"}
+{"summary": true, "N": 1048576, "K": 1024, "D": 256, "B": 1, "dtype": "fp16", "best": {"N": 1048576, "K": 1024, "D": 256, "B": 1, "dtype": "fp16", "BLOCK_N": 128, "BLOCK_K": 64, "num_warps": 4, "num_stages": 1, "time_ms": 1.3248639901479085, "status": "ok"}, "best_time_ms": 1.3248639901479085, "tuning_seconds": 15.0989248752594, "skipped": 4}
