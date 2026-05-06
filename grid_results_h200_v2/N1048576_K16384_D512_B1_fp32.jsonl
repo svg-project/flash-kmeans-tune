@@ -1,0 +1,55 @@
+{"N": 1048576, "K": 16384, "D": 512, "B": 1, "dtype": "fp32", "kernel": "small_d", "BLOCK_N": 32, "BLOCK_K": 32, "num_warps": 4, "num_stages": 1, "time_ms": 410.3814697265625, "status": "ok"}
+{"N": 1048576, "K": 16384, "D": 512, "B": 1, "dtype": "fp32", "kernel": "small_d", "BLOCK_N": 32, "BLOCK_K": 32, "num_warps": 4, "num_stages": 2, "time_ms": 383.8510437011719, "status": "ok"}
+{"N": 1048576, "K": 16384, "D": 512, "B": 1, "dtype": "fp32", "kernel": "small_d", "BLOCK_N": 32, "BLOCK_K": 32, "num_warps": 4, "num_stages": 4, "status": "oor"}
+{"N": 1048576, "K": 16384, "D": 512, "B": 1, "dtype": "fp32", "kernel": "small_d", "BLOCK_N": 32, "BLOCK_K": 32, "num_warps": 8, "num_stages": 1, "time_ms": 452.9826965332031, "status": "ok"}
+{"N": 1048576, "K": 16384, "D": 512, "B": 1, "dtype": "fp32", "kernel": "small_d", "BLOCK_N": 32, "BLOCK_K": 32, "num_warps": 8, "num_stages": 2, "time_ms": 426.37774658203125, "status": "ok"}
+{"N": 1048576, "K": 16384, "D": 512, "B": 1, "dtype": "fp32", "kernel": "small_d", "BLOCK_N": 32, "BLOCK_K": 32, "num_warps": 8, "num_stages": 4, "status": "oor"}
+{"N": 1048576, "K": 16384, "D": 512, "B": 1, "dtype": "fp32", "kernel": "small_d", "BLOCK_N": 32, "BLOCK_K": 64, "num_warps": 4, "num_stages": 1, "time_ms": 375.4599304199219, "status": "ok"}
+{"N": 1048576, "K": 16384, "D": 512, "B": 1, "dtype": "fp32", "kernel": "small_d", "BLOCK_N": 32, "BLOCK_K": 64, "num_warps": 4, "num_stages": 2, "time_ms": 276.7695007324219, "status": "ok"}
+{"N": 1048576, "K": 16384, "D": 512, "B": 1, "dtype": "fp32", "kernel": "small_d", "BLOCK_N": 32, "BLOCK_K": 64, "num_warps": 4, "num_stages": 4, "status": "oor"}
+{"N": 1048576, "K": 16384, "D": 512, "B": 1, "dtype": "fp32", "kernel": "small_d", "BLOCK_N": 32, "BLOCK_K": 64, "num_warps": 8, "num_stages": 1, "time_ms": 338.1850280761719, "status": "ok"}
+{"N": 1048576, "K": 16384, "D": 512, "B": 1, "dtype": "fp32", "kernel": "small_d", "BLOCK_N": 32, "BLOCK_K": 64, "num_warps": 8, "num_stages": 2, "time_ms": 281.59796142578125, "status": "ok"}
+{"N": 1048576, "K": 16384, "D": 512, "B": 1, "dtype": "fp32", "kernel": "small_d", "BLOCK_N": 32, "BLOCK_K": 64, "num_warps": 8, "num_stages": 4, "status": "oor"}
+{"N": 1048576, "K": 16384, "D": 512, "B": 1, "dtype": "fp32", "kernel": "small_d", "BLOCK_N": 32, "BLOCK_K": 128, "num_warps": 4, "num_stages": 1, "status": "oor"}
+{"N": 1048576, "K": 16384, "D": 512, "B": 1, "dtype": "fp32", "kernel": "small_d", "BLOCK_N": 32, "BLOCK_K": 128, "num_warps": 4, "num_stages": 2, "status": "oor"}
+{"N": 1048576, "K": 16384, "D": 512, "B": 1, "dtype": "fp32", "kernel": "small_d", "BLOCK_N": 32, "BLOCK_K": 128, "num_warps": 4, "num_stages": 4, "status": "oor"}
+{"N": 1048576, "K": 16384, "D": 512, "B": 1, "dtype": "fp32", "kernel": "small_d", "BLOCK_N": 32, "BLOCK_K": 128, "num_warps": 8, "num_stages": 1, "status": "oor"}
+{"N": 1048576, "K": 16384, "D": 512, "B": 1, "dtype": "fp32", "kernel": "small_d", "BLOCK_N": 32, "BLOCK_K": 128, "num_warps": 8, "num_stages": 2, "status": "oor"}
+{"N": 1048576, "K": 16384, "D": 512, "B": 1, "dtype": "fp32", "kernel": "small_d", "BLOCK_N": 32, "BLOCK_K": 128, "num_warps": 8, "num_stages": 4, "status": "oor"}
+{"N": 1048576, "K": 16384, "D": 512, "B": 1, "dtype": "fp32", "kernel": "small_d", "BLOCK_N": 64, "BLOCK_K": 32, "num_warps": 4, "num_stages": 1, "time_ms": 182.232666015625, "status": "ok"}
+{"N": 1048576, "K": 16384, "D": 512, "B": 1, "dtype": "fp32", "kernel": "small_d", "BLOCK_N": 64, "BLOCK_K": 32, "num_warps": 4, "num_stages": 2, "status": "oor"}
+{"N": 1048576, "K": 16384, "D": 512, "B": 1, "dtype": "fp32", "kernel": "small_d", "BLOCK_N": 64, "BLOCK_K": 32, "num_warps": 4, "num_stages": 4, "status": "oor"}
+{"N": 1048576, "K": 16384, "D": 512, "B": 1, "dtype": "fp32", "kernel": "small_d", "BLOCK_N": 64, "BLOCK_K": 32, "num_warps": 8, "num_stages": 1, "time_ms": 214.88528442382812, "status": "ok"}
+{"N": 1048576, "K": 16384, "D": 512, "B": 1, "dtype": "fp32", "kernel": "small_d", "BLOCK_N": 64, "BLOCK_K": 32, "num_warps": 8, "num_stages": 2, "status": "oor"}
+{"N": 1048576, "K": 16384, "D": 512, "B": 1, "dtype": "fp32", "kernel": "small_d", "BLOCK_N": 64, "BLOCK_K": 32, "num_warps": 8, "num_stages": 4, "status": "oor"}
+{"N": 1048576, "K": 16384, "D": 512, "B": 1, "dtype": "fp32", "kernel": "small_d", "BLOCK_N": 64, "BLOCK_K": 64, "num_warps": 4, "num_stages": 1, "status": "oor"}
+{"N": 1048576, "K": 16384, "D": 512, "B": 1, "dtype": "fp32", "kernel": "small_d", "BLOCK_N": 64, "BLOCK_K": 64, "num_warps": 4, "num_stages": 2, "status": "oor"}
+{"N": 1048576, "K": 16384, "D": 512, "B": 1, "dtype": "fp32", "kernel": "small_d", "BLOCK_N": 64, "BLOCK_K": 64, "num_warps": 4, "num_stages": 4, "status": "oor"}
+{"N": 1048576, "K": 16384, "D": 512, "B": 1, "dtype": "fp32", "kernel": "small_d", "BLOCK_N": 64, "BLOCK_K": 64, "num_warps": 8, "num_stages": 1, "status": "oor"}
+{"N": 1048576, "K": 16384, "D": 512, "B": 1, "dtype": "fp32", "kernel": "small_d", "BLOCK_N": 64, "BLOCK_K": 64, "num_warps": 8, "num_stages": 2, "status": "oor"}
+{"N": 1048576, "K": 16384, "D": 512, "B": 1, "dtype": "fp32", "kernel": "small_d", "BLOCK_N": 64, "BLOCK_K": 64, "num_warps": 8, "num_stages": 4, "status": "oor"}
+{"N": 1048576, "K": 16384, "D": 512, "B": 1, "dtype": "fp32", "kernel": "small_d", "BLOCK_N": 64, "BLOCK_K": 128, "num_warps": 4, "num_stages": 1, "status": "oor"}
+{"N": 1048576, "K": 16384, "D": 512, "B": 1, "dtype": "fp32", "kernel": "small_d", "BLOCK_N": 64, "BLOCK_K": 128, "num_warps": 4, "num_stages": 2, "status": "oor"}
+{"N": 1048576, "K": 16384, "D": 512, "B": 1, "dtype": "fp32", "kernel": "small_d", "BLOCK_N": 64, "BLOCK_K": 128, "num_warps": 4, "num_stages": 4, "status": "oor"}
+{"N": 1048576, "K": 16384, "D": 512, "B": 1, "dtype": "fp32", "kernel": "small_d", "BLOCK_N": 64, "BLOCK_K": 128, "num_warps": 8, "num_stages": 1, "status": "oor"}
+{"N": 1048576, "K": 16384, "D": 512, "B": 1, "dtype": "fp32", "kernel": "small_d", "BLOCK_N": 64, "BLOCK_K": 128, "num_warps": 8, "num_stages": 2, "status": "oor"}
+{"N": 1048576, "K": 16384, "D": 512, "B": 1, "dtype": "fp32", "kernel": "small_d", "BLOCK_N": 64, "BLOCK_K": 128, "num_warps": 8, "num_stages": 4, "status": "oor"}
+{"N": 1048576, "K": 16384, "D": 512, "B": 1, "dtype": "fp32", "kernel": "small_d", "BLOCK_N": 128, "BLOCK_K": 32, "num_warps": 4, "num_stages": 1, "status": "oor"}
+{"N": 1048576, "K": 16384, "D": 512, "B": 1, "dtype": "fp32", "kernel": "small_d", "BLOCK_N": 128, "BLOCK_K": 32, "num_warps": 4, "num_stages": 2, "status": "oor"}
+{"N": 1048576, "K": 16384, "D": 512, "B": 1, "dtype": "fp32", "kernel": "small_d", "BLOCK_N": 128, "BLOCK_K": 32, "num_warps": 4, "num_stages": 4, "status": "oor"}
+{"N": 1048576, "K": 16384, "D": 512, "B": 1, "dtype": "fp32", "kernel": "small_d", "BLOCK_N": 128, "BLOCK_K": 32, "num_warps": 8, "num_stages": 1, "status": "oor"}
+{"N": 1048576, "K": 16384, "D": 512, "B": 1, "dtype": "fp32", "kernel": "small_d", "BLOCK_N": 128, "BLOCK_K": 32, "num_warps": 8, "num_stages": 2, "status": "oor"}
+{"N": 1048576, "K": 16384, "D": 512, "B": 1, "dtype": "fp32", "kernel": "small_d", "BLOCK_N": 128, "BLOCK_K": 32, "num_warps": 8, "num_stages": 4, "status": "oor"}
+{"N": 1048576, "K": 16384, "D": 512, "B": 1, "dtype": "fp32", "kernel": "small_d", "BLOCK_N": 128, "BLOCK_K": 64, "num_warps": 4, "num_stages": 1, "status": "oor"}
+{"N": 1048576, "K": 16384, "D": 512, "B": 1, "dtype": "fp32", "kernel": "small_d", "BLOCK_N": 128, "BLOCK_K": 64, "num_warps": 4, "num_stages": 2, "status": "oor"}
+{"N": 1048576, "K": 16384, "D": 512, "B": 1, "dtype": "fp32", "kernel": "small_d", "BLOCK_N": 128, "BLOCK_K": 64, "num_warps": 4, "num_stages": 4, "status": "oor"}
+{"N": 1048576, "K": 16384, "D": 512, "B": 1, "dtype": "fp32", "kernel": "small_d", "BLOCK_N": 128, "BLOCK_K": 64, "num_warps": 8, "num_stages": 1, "status": "oor"}
+{"N": 1048576, "K": 16384, "D": 512, "B": 1, "dtype": "fp32", "kernel": "small_d", "BLOCK_N": 128, "BLOCK_K": 64, "num_warps": 8, "num_stages": 2, "status": "oor"}
+{"N": 1048576, "K": 16384, "D": 512, "B": 1, "dtype": "fp32", "kernel": "small_d", "BLOCK_N": 128, "BLOCK_K": 64, "num_warps": 8, "num_stages": 4, "status": "oor"}
+{"N": 1048576, "K": 16384, "D": 512, "B": 1, "dtype": "fp32", "kernel": "small_d", "BLOCK_N": 128, "BLOCK_K": 128, "num_warps": 4, "num_stages": 1, "status": "oor"}
+{"N": 1048576, "K": 16384, "D": 512, "B": 1, "dtype": "fp32", "kernel": "small_d", "BLOCK_N": 128, "BLOCK_K": 128, "num_warps": 4, "num_stages": 2, "status": "oor"}
+{"N": 1048576, "K": 16384, "D": 512, "B": 1, "dtype": "fp32", "kernel": "small_d", "BLOCK_N": 128, "BLOCK_K": 128, "num_warps": 4, "num_stages": 4, "status": "oor"}
+{"N": 1048576, "K": 16384, "D": 512, "B": 1, "dtype": "fp32", "kernel": "small_d", "BLOCK_N": 128, "BLOCK_K": 128, "num_warps": 8, "num_stages": 1, "status": "oor"}
+{"N": 1048576, "K": 16384, "D": 512, "B": 1, "dtype": "fp32", "kernel": "small_d", "BLOCK_N": 128, "BLOCK_K": 128, "num_warps": 8, "num_stages": 2, "status": "oor"}
+{"N": 1048576, "K": 16384, "D": 512, "B": 1, "dtype": "fp32", "kernel": "small_d", "BLOCK_N": 128, "BLOCK_K": 128, "num_warps": 8, "num_stages": 4, "status": "oor"}
+{"summary": true, "N": 1048576, "K": 16384, "D": 512, "B": 1, "dtype": "fp32", "kernel": "small_d", "best": {"N": 1048576, "K": 16384, "D": 512, "B": 1, "dtype": "fp32", "kernel": "small_d", "BLOCK_N": 64, "BLOCK_K": 32, "num_warps": 4, "num_stages": 1, "time_ms": 182.232666015625, "status": "ok"}, "best_time_ms": 182.232666015625, "tuning_seconds": 27.317760705947876, "skipped": 44}

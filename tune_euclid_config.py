@@ -23,9 +23,25 @@ def _load_flash_kmeans(repo_root: str):
     if not os.path.exists(os.path.join(repo_root, "flash_kmeans")):
         raise FileNotFoundError(f"flash_kmeans package not found under: {repo_root}")
     sys.path.insert(0, repo_root)
-    from flash_kmeans.assign_euclid_triton import _TUNE_CONFIGS, _euclid_assign_kernel
+    from flash_kmeans.assign_euclid_triton import (
+        _TUNE_CONFIGS,
+        _TUNE_CONFIGS_SPLIT_D,
+        _euclid_assign_kernel,
+        _euclid_assign_kernel_split_d,
+    )
 
-    return _TUNE_CONFIGS, _euclid_assign_kernel
+    return {
+        "small_d": (_TUNE_CONFIGS, _euclid_assign_kernel),
+        "split_d": (_TUNE_CONFIGS_SPLIT_D, _euclid_assign_kernel_split_d),
+    }
+
+
+def _resolve_kernel(name: str, D: int) -> str:
+    if name == "small_d":
+        return "small_d"
+    if name == "split_d":
+        return "split_d"
+    return "split_d" if D > 512 else "small_d"
 
 
 def _do_bench(run, warmup: int, rep: int):
@@ -54,6 +70,11 @@ def main():
     parser.add_argument("--d", type=int, required=True, help="Dimensionality (D)")
     parser.add_argument("--batch-size", type=int, default=1)
     parser.add_argument("--dtype", choices=["fp16", "fp32"], default="fp16")
+    parser.add_argument(
+        "--kernel",
+        choices=["auto", "small_d", "split_d"],
+        default="auto",
+    )
     parser.add_argument("--warmup", type=int, default=1)
     parser.add_argument("--rep", type=int, default=5)
     parser.add_argument("--flash-kmeans-root", type=str, default=None)
@@ -62,7 +83,9 @@ def main():
     args = parser.parse_args()
 
     repo_root = _resolve_repo_root(args.flash_kmeans_root)
-    tune_configs, kernel = _load_flash_kmeans(repo_root)
+    kernel_table = _load_flash_kmeans(repo_root)
+    kernel_choice = _resolve_kernel(args.kernel, args.d)
+    tune_configs, kernel = kernel_table[kernel_choice]
 
     import torch
     import triton
@@ -97,49 +120,49 @@ def main():
     for cfg in tune_configs:
         BN = cfg.kwargs["BLOCK_N"]
         BK = cfg.kwargs["BLOCK_K"]
+        BD = cfg.kwargs.get("BLOCK_D", None)
 
-        def _run():
-            kernel[grid](
-                x,
-                centroids,
-                x_sq,
-                c_sq,
-                out,
-                B,
-                N,
-                K,
-                D,
-                stride_x_b,
-                stride_x_n,
-                stride_x_d,
-                stride_c_b,
-                stride_c_k,
-                stride_c_d,
-                stride_xsq_b,
-                stride_xsq_n,
-                stride_csq_b,
-                stride_csq_k,
-                stride_out_b,
-                stride_out_n,
-                BLOCK_N=BN,
-                BLOCK_K=BK,
-                num_warps=cfg.num_warps,
-                num_stages=cfg.num_stages,
-            )
+        if kernel_choice == "split_d":
+            def _run(BN=BN, BK=BK, BD=BD, cfg=cfg):
+                kernel[grid](
+                    x, centroids, x_sq, c_sq, out,
+                    B, N, K, D,
+                    stride_x_b, stride_x_n, stride_x_d,
+                    stride_c_b, stride_c_k, stride_c_d,
+                    stride_xsq_b, stride_xsq_n,
+                    stride_csq_b, stride_csq_k,
+                    stride_out_b, stride_out_n,
+                    BLOCK_N=BN, BLOCK_K=BK, BLOCK_D=BD,
+                    num_warps=cfg.num_warps, num_stages=cfg.num_stages,
+                )
+        else:
+            def _run(BN=BN, BK=BK, cfg=cfg):
+                kernel[grid](
+                    x, centroids, x_sq, c_sq, out,
+                    B, N, K, D,
+                    stride_x_b, stride_x_n, stride_x_d,
+                    stride_c_b, stride_c_k, stride_c_d,
+                    stride_xsq_b, stride_xsq_n,
+                    stride_csq_b, stride_csq_k,
+                    stride_out_b, stride_out_n,
+                    BLOCK_N=BN, BLOCK_K=BK,
+                    num_warps=cfg.num_warps, num_stages=cfg.num_stages,
+                )
 
+        bd_str = f" BD={BD:3d}" if BD is not None else ""
         try:
             ms = _do_bench(_run, warmup=args.warmup, rep=args.rep)
         except Exception as e:
             msg = str(e)
             if "out of resource" in msg.lower() or "outofresources" in type(e).__name__.lower():
                 print(
-                    f"BN={BN:3d} BK={BK:3d} warps={cfg.num_warps} stages={cfg.num_stages} -> skipped (OOR)"
+                    f"BN={BN:3d} BK={BK:3d}{bd_str} warps={cfg.num_warps} stages={cfg.num_stages} -> skipped (OOR)"
                 )
                 skipped += 1
                 continue
             raise
         print(
-            f"BN={BN:3d} BK={BK:3d} warps={cfg.num_warps} stages={cfg.num_stages} -> {ms:.3f} ms"
+            f"BN={BN:3d} BK={BK:3d}{bd_str} warps={cfg.num_warps} stages={cfg.num_stages} -> {ms:.3f} ms"
         )
         if best_ms is None or ms < best_ms:
             best_ms = ms
@@ -155,6 +178,7 @@ def main():
         "D": D,
         "B": B,
         "dtype": args.dtype,
+        "kernel": kernel_choice,
         "BLOCK_N": int(best_cfg.kwargs["BLOCK_N"]),
         "BLOCK_K": int(best_cfg.kwargs["BLOCK_K"]),
         "num_warps": int(best_cfg.num_warps),
@@ -162,6 +186,8 @@ def main():
         "time_ms": float(best_ms),
         "tuning_seconds": float(total_s),
     }
+    if "BLOCK_D" in best_cfg.kwargs:
+        result["BLOCK_D"] = int(best_cfg.kwargs["BLOCK_D"])
 
     out_path = os.path.abspath(args.output)
     out_dir = os.path.dirname(out_path)

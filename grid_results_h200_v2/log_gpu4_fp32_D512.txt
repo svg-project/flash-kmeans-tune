@@ -1,0 +1,72 @@
+[GPU4] === N=65536 K=256 D=512 B=1 dtype=fp32 kernel=small_d ===
+Wrote: /home/ec2-user/flash-kmeans-tune/grid_results_h200_v2/N65536_K256_D512_B1_fp32.jsonl
+Best: BN=64 BK=32 warps=4 stages=1 (0.184 ms)
+Skipped 44 configs due to resource limits.
+[GPU4] === N=262144 K=256 D=512 B=1 dtype=fp32 kernel=small_d ===
+Wrote: /home/ec2-user/flash-kmeans-tune/grid_results_h200_v2/N262144_K256_D512_B1_fp32.jsonl
+Best: BN=64 BK=32 warps=4 stages=1 (0.642 ms)
+Skipped 44 configs due to resource limits.
+[GPU4] === N=1048576 K=256 D=512 B=1 dtype=fp32 kernel=small_d ===
+Wrote: /home/ec2-user/flash-kmeans-tune/grid_results_h200_v2/N1048576_K256_D512_B1_fp32.jsonl
+Best: BN=64 BK=32 warps=4 stages=1 (2.437 ms)
+Skipped 44 configs due to resource limits.
+[GPU4] === N=65536 K=1024 D=512 B=1 dtype=fp32 kernel=small_d ===
+Wrote: /home/ec2-user/flash-kmeans-tune/grid_results_h200_v2/N65536_K1024_D512_B1_fp32.jsonl
+Best: BN=64 BK=32 warps=4 stages=1 (0.581 ms)
+Skipped 44 configs due to resource limits.
+[GPU4] === N=262144 K=1024 D=512 B=1 dtype=fp32 kernel=small_d ===
+Wrote: /home/ec2-user/flash-kmeans-tune/grid_results_h200_v2/N262144_K1024_D512_B1_fp32.jsonl
+Best: BN=64 BK=32 warps=4 stages=1 (2.171 ms)
+Skipped 44 configs due to resource limits.
+[GPU4] === N=1048576 K=1024 D=512 B=1 dtype=fp32 kernel=small_d ===
+Wrote: /home/ec2-user/flash-kmeans-tune/grid_results_h200_v2/N1048576_K1024_D512_B1_fp32.jsonl
+Best: BN=64 BK=32 warps=4 stages=1 (8.322 ms)
+Skipped 44 configs due to resource limits.
+[GPU4] === N=65536 K=4096 D=512 B=1 dtype=fp32 kernel=small_d ===
+Wrote: /home/ec2-user/flash-kmeans-tune/grid_results_h200_v2/N65536_K4096_D512_B1_fp32.jsonl
+Best: BN=64 BK=32 warps=4 stages=1 (2.166 ms)
+Skipped 44 configs due to resource limits.
+[GPU4] === N=262144 K=4096 D=512 B=1 dtype=fp32 kernel=small_d ===
+Wrote: /home/ec2-user/flash-kmeans-tune/grid_results_h200_v2/N262144_K4096_D512_B1_fp32.jsonl
+Best: BN=64 BK=32 warps=4 stages=1 (8.258 ms)
+Skipped 44 configs due to resource limits.
+[GPU4] === N=1048576 K=4096 D=512 B=1 dtype=fp32 kernel=small_d ===
+Wrote: /home/ec2-user/flash-kmeans-tune/grid_results_h200_v2/N1048576_K4096_D512_B1_fp32.jsonl
+Best: BN=64 BK=32 warps=4 stages=1 (32.058 ms)
+Skipped 44 configs due to resource limits.
+[GPU4] === N=65536 K=16384 D=512 B=1 dtype=fp32 kernel=small_d ===
+Wrote: /home/ec2-user/flash-kmeans-tune/grid_results_h200_v2/N65536_K16384_D512_B1_fp32.jsonl
+Best: BN=64 BK=32 warps=4 stages=1 (11.673 ms)
+Skipped 44 configs due to resource limits.
+[GPU4] === N=262144 K=16384 D=512 B=1 dtype=fp32 kernel=small_d ===
+Wrote: /home/ec2-user/flash-kmeans-tune/grid_results_h200_v2/N262144_K16384_D512_B1_fp32.jsonl
+Best: BN=64 BK=32 warps=4 stages=1 (46.617 ms)
+Skipped 44 configs due to resource limits.
+[GPU4] === N=1048576 K=16384 D=512 B=1 dtype=fp32 kernel=small_d ===
+Wrote: /home/ec2-user/flash-kmeans-tune/grid_results_h200_v2/N1048576_K16384_D512_B1_fp32.jsonl
+Best: BN=64 BK=32 warps=4 stages=1 (182.233 ms)
+Skipped 44 configs due to resource limits.
+[GPU4] === N=65536 K=65536 D=512 B=1 dtype=fp32 kernel=small_d ===
+Wrote: /home/ec2-user/flash-kmeans-tune/grid_results_h200_v2/N65536_K65536_D512_B1_fp32.jsonl
+Best: BN=64 BK=32 warps=4 stages=1 (46.482 ms)
+Skipped 44 configs due to resource limits.
+[GPU4] === N=262144 K=65536 D=512 B=1 dtype=fp32 kernel=small_d ===
+Wrote: /home/ec2-user/flash-kmeans-tune/grid_results_h200_v2/N262144_K65536_D512_B1_fp32.jsonl
+Best: BN=64 BK=32 warps=4 stages=1 (186.341 ms)
+Skipped 44 configs due to resource limits.
+[GPU4] === N=1048576 K=65536 D=512 B=1 dtype=fp32 kernel=small_d ===
+Wrote: /home/ec2-user/flash-kmeans-tune/grid_results_h200_v2/N1048576_K65536_D512_B1_fp32.jsonl
+Best: BN=64 BK=32 warps=4 stages=1 (728.564 ms)
+Skipped 44 configs due to resource limits.
+[GPU4] === N=65536 K=200000 D=512 B=1 dtype=fp32 kernel=small_d ===
+Wrote: /home/ec2-user/flash-kmeans-tune/grid_results_h200_v2/N65536_K200000_D512_B1_fp32.jsonl
+Best: BN=64 BK=32 warps=4 stages=1 (141.859 ms)
+Skipped 44 configs due to resource limits.
+[GPU4] === N=262144 K=200000 D=512 B=1 dtype=fp32 kernel=small_d ===
+Wrote: /home/ec2-user/flash-kmeans-tune/grid_results_h200_v2/N262144_K200000_D512_B1_fp32.jsonl
+Best: BN=64 BK=32 warps=4 stages=1 (568.195 ms)
+Skipped 44 configs due to resource limits.
+[GPU4] === N=1048576 K=200000 D=512 B=1 dtype=fp32 kernel=small_d ===
+Wrote: /home/ec2-user/flash-kmeans-tune/grid_results_h200_v2/N1048576_K200000_D512_B1_fp32.jsonl
+Best: BN=64 BK=32 warps=4 stages=1 (2226.936 ms)
+Skipped 44 configs due to resource limits.

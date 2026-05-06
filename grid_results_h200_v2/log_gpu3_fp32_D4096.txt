@@ -1,0 +1,58 @@
+[GPU3] === N=65536 K=256 D=4096 B=1 dtype=fp32 kernel=split_d ===
+Wrote: /home/ec2-user/flash-kmeans-tune/grid_results_h200_v2/N65536_K256_D4096_B1_fp32.jsonl
+Best: BN=128 BK=128 warps=8 stages=4 (0.579 ms)
+Skipped 16 configs due to resource limits.
+[GPU3] === N=262144 K=256 D=4096 B=1 dtype=fp32 kernel=split_d ===
+Wrote: /home/ec2-user/flash-kmeans-tune/grid_results_h200_v2/N262144_K256_D4096_B1_fp32.jsonl
+Best: BN=128 BK=128 warps=8 stages=4 (2.296 ms)
+Skipped 16 configs due to resource limits.
+[GPU3] === N=1048576 K=256 D=4096 B=1 dtype=fp32 kernel=split_d ===
+Wrote: /home/ec2-user/flash-kmeans-tune/grid_results_h200_v2/N1048576_K256_D4096_B1_fp32.jsonl
+Best: BN=128 BK=128 warps=8 stages=4 (9.928 ms)
+Skipped 16 configs due to resource limits.
+[GPU3] === N=65536 K=1024 D=4096 B=1 dtype=fp32 kernel=split_d ===
+Wrote: /home/ec2-user/flash-kmeans-tune/grid_results_h200_v2/N65536_K1024_D4096_B1_fp32.jsonl
+Best: BN=128 BK=128 warps=8 stages=4 (2.275 ms)
+Skipped 16 configs due to resource limits.
+[GPU3] === N=262144 K=1024 D=4096 B=1 dtype=fp32 kernel=split_d ===
+Wrote: /home/ec2-user/flash-kmeans-tune/grid_results_h200_v2/N262144_K1024_D4096_B1_fp32.jsonl
+Best: BN=128 BK=128 warps=8 stages=4 (10.069 ms)
+Skipped 16 configs due to resource limits.
+[GPU3] === N=1048576 K=1024 D=4096 B=1 dtype=fp32 kernel=split_d ===
+Wrote: /home/ec2-user/flash-kmeans-tune/grid_results_h200_v2/N1048576_K1024_D4096_B1_fp32.jsonl
+Best: BN=128 BK=128 warps=8 stages=4 (40.590 ms)
+Skipped 16 configs due to resource limits.
+[GPU3] === N=65536 K=4096 D=4096 B=1 dtype=fp32 kernel=split_d ===
+Wrote: /home/ec2-user/flash-kmeans-tune/grid_results_h200_v2/N65536_K4096_D4096_B1_fp32.jsonl
+Best: BN=128 BK=128 warps=8 stages=4 (9.422 ms)
+Skipped 16 configs due to resource limits.
+[GPU3] === N=262144 K=4096 D=4096 B=1 dtype=fp32 kernel=split_d ===
+Wrote: /home/ec2-user/flash-kmeans-tune/grid_results_h200_v2/N262144_K4096_D4096_B1_fp32.jsonl
+Best: BN=128 BK=128 warps=8 stages=4 (40.904 ms)
+Skipped 16 configs due to resource limits.
+[GPU3] === N=1048576 K=4096 D=4096 B=1 dtype=fp32 kernel=split_d ===
+Wrote: /home/ec2-user/flash-kmeans-tune/grid_results_h200_v2/N1048576_K4096_D4096_B1_fp32.jsonl
+Best: BN=128 BK=128 warps=8 stages=4 (162.687 ms)
+Skipped 16 configs due to resource limits.
+[GPU3] === N=65536 K=16384 D=4096 B=1 dtype=fp32 kernel=split_d ===
+Wrote: /home/ec2-user/flash-kmeans-tune/grid_results_h200_v2/N65536_K16384_D4096_B1_fp32.jsonl
+Best: BN=128 BK=128 warps=8 stages=4 (40.229 ms)
+Skipped 16 configs due to resource limits.
+[GPU3] === N=262144 K=16384 D=4096 B=1 dtype=fp32 kernel=split_d ===
+Wrote: /home/ec2-user/flash-kmeans-tune/grid_results_h200_v2/N262144_K16384_D4096_B1_fp32.jsonl
+Best: BN=128 BK=128 warps=8 stages=4 (165.568 ms)
+Skipped 16 configs due to resource limits.
+[GPU3] === N=1048576 K=16384 D=4096 B=1 dtype=fp32 kernel=split_d ===
+Wrote: /home/ec2-user/flash-kmeans-tune/grid_results_h200_v2/N1048576_K16384_D4096_B1_fp32.jsonl
+Best: BN=128 BK=128 warps=4 stages=4 (686.274 ms)
+Skipped 16 configs due to resource limits.
+[GPU3] === N=65536 K=65536 D=4096 B=1 dtype=fp32 kernel=split_d ===
+Wrote: /home/ec2-user/flash-kmeans-tune/grid_results_h200_v2/N65536_K65536_D4096_B1_fp32.jsonl
+Best: BN=128 BK=128 warps=8 stages=4 (164.112 ms)
+Skipped 16 configs due to resource limits.
+[GPU3] === N=262144 K=65536 D=4096 B=1 dtype=fp32 kernel=split_d ===
+Wrote: /home/ec2-user/flash-kmeans-tune/grid_results_h200_v2/N262144_K65536_D4096_B1_fp32.jsonl
+Best: BN=128 BK=128 warps=8 stages=4 (691.455 ms)
+Skipped 16 configs due to resource limits.
+[GPU3] === N=1048576 K=65536 D=4096 B=1 dtype=fp32 kernel=split_d ===
+/home/ec2-user/flash-kmeans-tune/run_focused_sweep.sh: line 68: 732375 Killed                  CUDA_VISIBLE_DEVICES="${gpu_id}" "${PYTHON_BIN}" "${ROOT_DIR}/benchmark_euclid_configs.py" --n "${n}" --k "${k}" --d "${d}" --batch-size 1 --dtype "${dtype}" --kernel "${kchoice}" --warmup "${WARMUP}" --rep "${REP}" --flash-kmeans-root "${FLASH_KMEANS_ROOT}" --output-dir "${OUT_DIR}"

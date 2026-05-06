@@ -1,0 +1,60 @@
+[GPU1] === N=65536 K=256 D=2048 B=1 dtype=fp32 kernel=split_d ===
+Wrote: /home/ec2-user/flash-kmeans-tune/grid_results_h200_v2/N65536_K256_D2048_B1_fp32.jsonl
+Best: BN=128 BK=128 warps=8 stages=4 (0.291 ms)
+Skipped 16 configs due to resource limits.
+[GPU1] === N=262144 K=256 D=2048 B=1 dtype=fp32 kernel=split_d ===
+Wrote: /home/ec2-user/flash-kmeans-tune/grid_results_h200_v2/N262144_K256_D2048_B1_fp32.jsonl
+Best: BN=128 BK=128 warps=8 stages=4 (1.125 ms)
+Skipped 16 configs due to resource limits.
+[GPU1] === N=1048576 K=256 D=2048 B=1 dtype=fp32 kernel=split_d ===
+Wrote: /home/ec2-user/flash-kmeans-tune/grid_results_h200_v2/N1048576_K256_D2048_B1_fp32.jsonl
+Best: BN=128 BK=128 warps=8 stages=4 (4.552 ms)
+Skipped 16 configs due to resource limits.
+[GPU1] === N=65536 K=1024 D=2048 B=1 dtype=fp32 kernel=split_d ===
+Wrote: /home/ec2-user/flash-kmeans-tune/grid_results_h200_v2/N65536_K1024_D2048_B1_fp32.jsonl
+Best: BN=128 BK=128 warps=8 stages=4 (1.118 ms)
+Skipped 16 configs due to resource limits.
+[GPU1] === N=262144 K=1024 D=2048 B=1 dtype=fp32 kernel=split_d ===
+Wrote: /home/ec2-user/flash-kmeans-tune/grid_results_h200_v2/N262144_K1024_D2048_B1_fp32.jsonl
+Best: BN=128 BK=128 warps=8 stages=4 (4.482 ms)
+Skipped 16 configs due to resource limits.
+[GPU1] === N=1048576 K=1024 D=2048 B=1 dtype=fp32 kernel=split_d ===
+Wrote: /home/ec2-user/flash-kmeans-tune/grid_results_h200_v2/N1048576_K1024_D2048_B1_fp32.jsonl
+Best: BN=128 BK=128 warps=8 stages=4 (19.507 ms)
+Skipped 16 configs due to resource limits.
+[GPU1] === N=65536 K=4096 D=2048 B=1 dtype=fp32 kernel=split_d ===
+Wrote: /home/ec2-user/flash-kmeans-tune/grid_results_h200_v2/N65536_K4096_D2048_B1_fp32.jsonl
+Best: BN=128 BK=128 warps=8 stages=4 (4.635 ms)
+Skipped 16 configs due to resource limits.
+[GPU1] === N=262144 K=4096 D=2048 B=1 dtype=fp32 kernel=split_d ===
+Wrote: /home/ec2-user/flash-kmeans-tune/grid_results_h200_v2/N262144_K4096_D2048_B1_fp32.jsonl
+Best: BN=128 BK=128 warps=8 stages=4 (19.499 ms)
+Skipped 16 configs due to resource limits.
+[GPU1] === N=1048576 K=4096 D=2048 B=1 dtype=fp32 kernel=split_d ===
+Wrote: /home/ec2-user/flash-kmeans-tune/grid_results_h200_v2/N1048576_K4096_D2048_B1_fp32.jsonl
+Best: BN=128 BK=128 warps=8 stages=4 (77.517 ms)
+Skipped 16 configs due to resource limits.
+[GPU1] === N=65536 K=16384 D=2048 B=1 dtype=fp32 kernel=split_d ===
+Wrote: /home/ec2-user/flash-kmeans-tune/grid_results_h200_v2/N65536_K16384_D2048_B1_fp32.jsonl
+Best: BN=128 BK=128 warps=8 stages=4 (19.296 ms)
+Skipped 16 configs due to resource limits.
+[GPU1] === N=262144 K=16384 D=2048 B=1 dtype=fp32 kernel=split_d ===
+Wrote: /home/ec2-user/flash-kmeans-tune/grid_results_h200_v2/N262144_K16384_D2048_B1_fp32.jsonl
+Best: BN=128 BK=128 warps=8 stages=4 (77.876 ms)
+Skipped 16 configs due to resource limits.
+[GPU1] === N=1048576 K=16384 D=2048 B=1 dtype=fp32 kernel=split_d ===
+Wrote: /home/ec2-user/flash-kmeans-tune/grid_results_h200_v2/N1048576_K16384_D2048_B1_fp32.jsonl
+Best: BN=128 BK=128 warps=8 stages=4 (315.595 ms)
+Skipped 16 configs due to resource limits.
+[GPU1] === N=65536 K=65536 D=2048 B=1 dtype=fp32 kernel=split_d ===
+Wrote: /home/ec2-user/flash-kmeans-tune/grid_results_h200_v2/N65536_K65536_D2048_B1_fp32.jsonl
+Best: BN=128 BK=128 warps=8 stages=4 (77.821 ms)
+Skipped 16 configs due to resource limits.
+[GPU1] === N=262144 K=65536 D=2048 B=1 dtype=fp32 kernel=split_d ===
+Wrote: /home/ec2-user/flash-kmeans-tune/grid_results_h200_v2/N262144_K65536_D2048_B1_fp32.jsonl
+Best: BN=128 BK=128 warps=8 stages=4 (313.284 ms)
+Skipped 16 configs due to resource limits.
+[GPU1] === N=1048576 K=65536 D=2048 B=1 dtype=fp32 kernel=split_d ===
+Wrote: /home/ec2-user/flash-kmeans-tune/grid_results_h200_v2/N1048576_K65536_D2048_B1_fp32.jsonl
+Best: BN=128 BK=128 warps=4 stages=4 (1305.217 ms)
+Skipped 16 configs due to resource limits.

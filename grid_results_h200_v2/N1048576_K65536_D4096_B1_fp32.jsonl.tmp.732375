@@ -1,0 +1,3 @@
+{"N": 1048576, "K": 65536, "D": 4096, "B": 1, "dtype": "fp32", "kernel": "split_d", "BLOCK_N": 32, "BLOCK_K": 32, "num_warps": 4, "num_stages": 1, "BLOCK_D": 32, "time_ms": 15555.9775390625, "status": "ok"}
+{"N": 1048576, "K": 65536, "D": 4096, "B": 1, "dtype": "fp32", "kernel": "split_d", "BLOCK_N": 32, "BLOCK_K": 32, "num_warps": 4, "num_stages": 2, "BLOCK_D": 32, "time_ms": 13669.8642578125, "status": "ok"}
+{"N": 1048576, "K": 65536, "D": 4096, "B": 1, "dtype": "fp32", "kernel": "split_d", "BLOCK_N": 32, "BLOCK_K": 32, "num_warps": 4, "num_stages": 4, "BLOCK_D": 32, "time_ms": 15305.0146484375, "status": "ok"}
